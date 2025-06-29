@@ -1,4 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
+import Home from "./components/Home";
+import Blue from "./components/Blue";
+import Red from "./components/Red";
 
 function App() {
   return (
@@ -11,9 +14,9 @@ function App() {
 
       <div id="main-section">
         <Routes>
-          <Route path="/" element={<h1>Home</h1>} />
-          <Route path="/blue" element={<h1>Blue</h1>} />
-          <Route path="/red" element={<h1>Red</h1>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/blue" element={<Blue />} />
+          <Route path="/red" element={<Red />} />
         </Routes>
       </div>
     </div>
